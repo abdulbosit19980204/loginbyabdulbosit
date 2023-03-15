@@ -19,7 +19,7 @@ func main() {
 	// Gin server yaratish
 	router := gin.Default()
 
-	router.LoadHTMLFiles("front/signin.html", "templates/signup.html", "index.html", "reg.html")
+	router.LoadHTMLFiles("templates/signin.html", "templates/signup.html", "index.html", "reg.html")
 
 	// Login formasi uchun endpoint yaratish
 	router.GET("/login", func(c *gin.Context) {
