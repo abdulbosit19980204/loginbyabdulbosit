@@ -20,6 +20,7 @@ func main() {
 	router := gin.Default()
 
 	router.LoadHTMLFiles("login.html", "index.html", "reg.html")
+
 	// Login formasi uchun endpoint yaratish
 	router.GET("/login", func(c *gin.Context) {
 
