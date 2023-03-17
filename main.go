@@ -24,7 +24,7 @@ func main() {
 	// Login formasi uchun endpoint yaratish
 	router.GET("/login", func(c *gin.Context) {
 
-		c.HTML(200, "login.html", gin.H{"message": "login.html"})
+		c.HTML(200, "../front/signin.html", gin.H{"message": "signin.html"})
 
 	})
 
